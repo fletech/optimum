@@ -1,12 +1,12 @@
 import React from "react";
-import Banner from "../components/Banner";
-import Layout from "../components/Layout";
-import Hero from "../components/Hero";
+import Banner from "../components/banner";
+import Layout from "../components/layout";
+import Hero from "../components/hero";
 import Services from "../components/services";
 import SectionDefault from "../components/sectionDefault";
 import SectionHeading from "../components/sectionHeading";
 
-import Seo from "../components/Seo";
+import Seo from "../components/seo";
 
 import { fetchAPI } from "../lib/api";
 import { selectAnImage } from "../lib/utils";
