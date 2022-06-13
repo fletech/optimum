@@ -5,7 +5,6 @@ import Hero from "../components/hero";
 import Services from "../components/services";
 import SectionDefault from "../components/sectionDefault";
 import SectionHeading from "../components/sectionHeading";
-
 import Seo from "../components/seo";
 
 import { fetchAPI } from "../lib/api";
