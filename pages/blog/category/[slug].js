@@ -1,6 +1,6 @@
-import Seo from "../../../components/Seo";
-import Layout from "../../../components/Layout";
-import Articles from "../../../components/blog/Articles";
+import Seo from "../../../components/seo";
+import Layout from "../../../components/layout";
+import Articles from "../../../components/blog/articles";
 
 import { fetchAPI } from "../../../lib/api";
 
