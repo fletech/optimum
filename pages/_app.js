@@ -2,6 +2,7 @@ import App from "next/app";
 import Head from "next/head";
 import "../styles/globals.css";
 import "../styles/Banner.css";
+import "../styles/Slider.css";
 import { createContext } from "react";
 import { fetchAPI } from "../lib/api";
 import { getStrapiMedia } from "../lib/media";
@@ -10,7 +11,8 @@ import { getStrapiMedia } from "../lib/media";
 export const GlobalContext = createContext({});
 
 const MyApp = ({ Component, pageProps }) => {
-  const { global, homepage, services } = pageProps;
+  const { global, homepage, services, branding, contact, customers } =
+    pageProps;
   return (
     <>
       <Head>
@@ -20,7 +22,14 @@ const MyApp = ({ Component, pageProps }) => {
         />
       </Head>
       <GlobalContext.Provider
-        value={{ global: global.attributes, homepage, services }}
+        value={{
+          global: global.attributes,
+          homepage,
+          services,
+          branding,
+          contact,
+          customers,
+        }}
       >
         <Component {...pageProps} />
       </GlobalContext.Provider>
@@ -53,6 +62,17 @@ MyApp.getInitialProps = async (ctx) => {
     populate: "*",
   });
 
+  const brandingRes = await fetchAPI("/brandings", {
+    populate: "*",
+  });
+
+  const contactRes = await fetchAPI("/contact", {
+    populate: "*",
+  });
+  const customersRes = await fetchAPI("/customers", {
+    populate: "*",
+  });
+
   //TODO: hacer un llamado a la API de strapi por cada entidad y almacenarla en el context.
   //TODO: investigar si se puede.
 
@@ -63,6 +83,9 @@ MyApp.getInitialProps = async (ctx) => {
       global: globalRes.data,
       homepage: homepageRes.data,
       services: servicesRes.data,
+      branding: brandingRes.data,
+      contact: contactRes.data,
+      customers: customersRes.data,
     },
   };
 };

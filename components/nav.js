@@ -8,14 +8,14 @@ const Nav = () => {
       <div className="w-1/2 h-full"></div>
       <nav className="w-1/2 h-full">
         <ul className="h-full flex justify-end items-center">
-          <li className="ml-2">
+          <li className="ml-2 text-white">
             <Link href="/">
-              <a>Home</a>
+              <a>Inicio</a>
             </Link>
           </li>
-          <li className="ml-2">
+          <li className="ml-2 text-white">
             <Link href={`/blog`}>
-              <a>Blog</a>
+              <a>Contactanos</a>
             </Link>
           </li>
         </ul>

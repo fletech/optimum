@@ -1,11 +1,11 @@
 import React from "react";
 
-const sectionDefault = ({ children, display, classes, height }) => {
+const sectionDefault = ({ children, display, classes, padding }) => {
   return (
     <div
-      className={`h-auto w-full px-[5%] pt-[12vh] ${display} ${
-        classes ? classes : ""
-      }`}
+      className={` w-full ${
+        padding ? padding : "pt-[10vh] px-[5%]"
+      }  ${display} ${classes ? classes : ""}`}
     >
       {children}
     </div>

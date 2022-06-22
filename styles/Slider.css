@@ -1,0 +1,127 @@
+@keyframes marquee4 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-14rem * 4));
+  }
+}
+@keyframes marquee5 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-14rem * 5));
+  }
+}
+
+@keyframes marquee6 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-14rem * 6));
+  }
+}
+
+@keyframes marquee7 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-14rem * 7));
+  }
+}
+
+@keyframes marquee8 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-14rem * 8));
+  }
+}
+
+@keyframes marquee9 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-14rem * 9));
+  }
+}
+
+@keyframes marquee10 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-14rem * 10));
+  }
+}
+
+@keyframes marquee11 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-14rem * 11));
+  }
+}
+
+@keyframes marquee12 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-14rem * 12));
+  }
+}
+.slider-track .logo:hover {
+  transform: scale(1.1);
+  transition: transform ease-out 0.1s;
+}
+.slider-track .logo {
+  transition: transform ease-out 0.1s;
+}
+
+.slider-track.length4 {
+  width: calc(14rem * 12);
+  animation: marquee4 10s linear infinite;
+}
+.slider-track.length5 {
+  width: calc(14rem * 15);
+  animation: marquee5 10s linear infinite;
+}
+.slider-track.length6 {
+  width: calc(14rem * 18);
+  animation: marquee6 10s linear infinite;
+}
+.slider-track.length7 {
+  width: calc(14rem * 21);
+  animation: marquee7 10s linear infinite;
+}
+.slider-track.length8 {
+  width: calc(14rem * 24);
+  animation: marquee8 10s linear infinite;
+}
+.slider-track.length9 {
+  width: calc(14rem * 27);
+  animation: marquee5 10s linear infinite;
+}
+.slider-track.length10 {
+  width: calc(14rem * 30);
+  animation: marquee6 10s linear infinite;
+}
+.slider-track.length11 {
+  width: calc(14rem * 33);
+  animation: marquee7 10s linear infinite;
+}
+.slider-track.length12 {
+  width: calc(14rem * 36);
+  animation: marquee8 10s linear infinite;
+}
+
+.slider-container:hover .slider-track {
+  animation-play-state: paused;
+}

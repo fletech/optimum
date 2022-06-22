@@ -22,6 +22,9 @@
   margin-bottom: -7px; /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
+  /* background: #8cd3e3;
+  background: #68cbe1;
+  background: #379cb3; */
 }
 .waves.translated {
   transform: translateY(-55vh);

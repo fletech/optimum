@@ -7,20 +7,20 @@ const SectionHeading = ({
   textColor,
 }) => {
   return (
-    <div className="md:w-1/2 w-[80%] flex flex-col justify-center items-center">
+    <div className="md:w-1/2 w-[90%] flex flex-col justify-center items-center">
       <h3
-        className={`capitalize ${textColor} md:text-xl text-lg font-semibold text-center`}
+        className={`capitalize ${textColor} md:text-lg text-md font-semibold text-center`}
       >
         {topHeadline}
       </h3>
       <h2
-        className={`uppercase md:text-3xl text-2xl text-black font-semibold my-2 text-center`}
+        className={`uppercase md:text-4xl text-3xl text-black font-semibold text-center`}
       >
         {mainHeadline}
       </h2>
       {bottomHeadline && (
         <h3
-          className={`capitalize md:text-xl text-lg font-semibold ${textColor} text-center`}
+          className={`capitalize md:text-lg text-md font-semibold ${textColor} text-center`}
         >
           {bottomHeadline}
         </h3>
