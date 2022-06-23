@@ -13,11 +13,6 @@ const Nav = () => {
               <a>Inicio</a>
             </Link>
           </li>
-          <li className="ml-2 text-white">
-            <Link href={`/blog`}>
-              <a>Contactanos</a>
-            </Link>
-          </li>
         </ul>
       </nav>
     </div>
