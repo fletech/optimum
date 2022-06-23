@@ -16,7 +16,7 @@ const BrandingCard = ({ data }) => {
         <img
           className="w-[2rem]"
           alt={brand.attributes.icon.data.alternativeText}
-          src={getStrapiMedia(brand.attributes.icon)}
+          src={brand.attributes.icon.data.attributes.url}
         />
       </div>
 

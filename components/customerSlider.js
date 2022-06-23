@@ -21,7 +21,7 @@ const CustomerSlider = () => {
           >
             <img
               alt={customer.name}
-              src={getStrapiMedia(customer.attributes.logo)}
+              src={customer.attributes.logo.data.attributes.url}
             />
           </div>
         ))}

@@ -8,7 +8,7 @@ const Hero = ({ coverImage, heroTitle, heroSubtitle, heroDescription }) => {
     <div className="relative md:h-[93vh] h-[90vh] w-full overflow-hidden ">
       <div className="w-full h-full relative">
         <img
-          src={getStrapiMedia(coverImage)}
+          src={coverImage.data.attributes.url}
           className="h-full w-full object-cover brightness-100"
         />
       </div>

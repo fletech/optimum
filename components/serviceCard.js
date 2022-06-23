@@ -2,6 +2,7 @@ import React from "react";
 import { getStrapiMedia } from "../lib/media";
 
 const ServiceCard = ({ data, type }) => {
+  console.log(data[0].attributes);
   return data.map(
     (service) =>
       service.attributes.type == type && (
@@ -12,7 +13,8 @@ const ServiceCard = ({ data, type }) => {
           <img
             className="w-[3rem] max-h-[3rem]"
             alt={service.attributes.icon.data.alternativeText}
-            src={getStrapiMedia(service.attributes.icon)}
+            src={service.attributes.icon.data.attributes.url}
+            // src={getStrapiMedia(service.attributes.icon)}
           />
           <p className="text-black md:text-xl text-lg ">
             {service.attributes.title}
