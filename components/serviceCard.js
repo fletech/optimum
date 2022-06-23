@@ -2,7 +2,6 @@ import React from "react";
 import { getStrapiMedia } from "../lib/media";
 
 const ServiceCard = ({ data, type }) => {
-  console.log(data[0].attributes);
   return data.map(
     (service) =>
       service.attributes.type == type && (

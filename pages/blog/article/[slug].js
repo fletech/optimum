@@ -35,7 +35,7 @@ const Article = ({ article, categories }) => {
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
             <div>
-              {article.attributes.author.data.attributes.picture && (
+              {/* {article.attributes.author.data.attributes.picture && (
                 <img
                   src={getStrapiMedia(
                     article.attributes.author.data.attributes.picture
@@ -50,7 +50,7 @@ const Article = ({ article, categories }) => {
                     height: 60,
                   }}
                 />
-              )}
+              )} */}
             </div>
             <div className="uk-width-expand">
               <p className="uk-margin-remove-bottom">
