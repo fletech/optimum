@@ -9,7 +9,7 @@ import ServiceCard from "./serviceCard";
 
 const Services = () => {
   const { services } = useContext(GlobalContext);
-  //console.log(services[0]);
+
   return (
     <SectionDefault display={"flex flex-col items-center"}>
       <SectionHeading

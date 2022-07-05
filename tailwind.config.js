@@ -20,7 +20,7 @@ module.exports = {
           // dark: "#43a2b7",
         },
         HL_brown: "rgb(227, 171, 50)",
-        NAV_transparency: "rgba(227, 171, 50,0.1)",
+        NAV_transparency: "rgba(227, 171, 50,0.6)",
       },
     },
   },

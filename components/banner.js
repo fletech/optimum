@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import BannerTextCard from "./bannerTextCard";
 import BannerWaves from "./bannerWaves";
 
-import { useContext } from "react";
 import { GlobalContext } from "../pages/_app";
 
 const Banner = () => {
   const { homepage } = useContext(GlobalContext);
+  // console.log(GlobalContext.homepage);
   return (
     <div className="header text-white">
       <div className="inner-header flex flex-col md:flex-row justify-center items-center p">

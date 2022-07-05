@@ -8,29 +8,27 @@ const ContactForm = ({ formData }) => {
         {formData.inputs.map((input) => {
           if (input.type != "textarea") {
             return (
-              <>
+              <div key={input.name}>
                 <span className={FORM_CLASSES.label}>{input.label}</span>
                 <input
-                  key={input.name}
                   name={input.name}
                   className={FORM_CLASSES.input_textarea_primary}
                   type={input.type}
                   placeholder={input.placeholder}
                 />
-              </>
+              </div>
             );
           } else {
             return (
-              <>
+              <div key={input.name}>
                 <span className={FORM_CLASSES.label}>{input.label}</span>
                 <textarea
-                  key={input.name}
                   name={input.name}
                   className={`min-h-[3rem] max-h-[6rem] ${FORM_CLASSES.input_textarea_primary}`}
                   type={input.type}
                   placeholder={input.placeholder}
                 />
-              </>
+              </div>
             );
           }
         })}

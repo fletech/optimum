@@ -1,5 +1,8 @@
 import App from "next/app";
+import { useState } from "react";
 import Head from "next/head";
+import Nav from "../components/nav";
+import ServiceModal from "../components/serviceModal";
 import "../styles/globals.css";
 import "../styles/Banner.css";
 import "../styles/Slider.css";
@@ -9,10 +12,11 @@ import { getStrapiMedia } from "../lib/media";
 
 // Store Strapi Global object in context
 export const GlobalContext = createContext({});
-
 const MyApp = ({ Component, pageProps }) => {
-  const { global, homepage, services, branding, contact, customers } =
+  const { global, homepage, images, services, branding, contact, customers } =
     pageProps;
+  let [modal, setModal] = useState(false);
+
   return (
     <>
       <Head>
@@ -23,15 +27,19 @@ const MyApp = ({ Component, pageProps }) => {
       </Head>
       <GlobalContext.Provider
         value={{
-          global: global.attributes,
+          global,
           homepage,
+          images,
           services,
           branding,
           contact,
           customers,
+          modal,
+          setModal,
         }}
       >
         <Component {...pageProps} />
+        <ServiceModal />
       </GlobalContext.Provider>
     </>
   );
@@ -54,7 +62,7 @@ MyApp.getInitialProps = async (ctx) => {
     },
   });
 
-  const homepageRes = await fetchAPI("/homepage", {
+  const homepageRes = fetchAPI("/homepage", {
     populate: "*",
   });
 
@@ -73,7 +81,7 @@ MyApp.getInitialProps = async (ctx) => {
     populate: "*",
   });
 
-  //TODO: hacer un llamado a la API de strapi por cada entidad y almacenarla en el context.
+  //TODO: hacer un llamado a la API de strapi por cada endpoint y almacenarla en el context.
   //TODO: investigar si se puede.
 
   // Pass the data to our page via props

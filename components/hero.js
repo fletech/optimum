@@ -1,9 +1,15 @@
 import React from "react";
+import { selectAnImage } from "../lib/utils";
+
 import { getStrapiMedia } from "../lib/media";
 import ReactMarkdown from "react-markdown";
 
 //Resolver las props simplemente usando el context. Evitar usar props nuevamente
-const Hero = ({ coverImage, heroTitle, heroSubtitle, heroDescription }) => {
+const Hero = ({ homepage, images }) => {
+  const { heroTitle, heroSubtitle, heroDescription, coverTitle } =
+    homepage.attributes.hero;
+  const coverImage = selectAnImage(images, coverTitle);
+
   return (
     <div className="relative md:h-[93vh] h-[90vh] w-full overflow-hidden ">
       <div className="w-full h-full relative">
