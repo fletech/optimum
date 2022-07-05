@@ -42,8 +42,8 @@ const Nav = () => {
       <div className="w-1/2 h-full flex justify-start items-center">
         <img alt="logo" src="/images/LOGO.svg" className="h-[70%]" />
       </div>
-      <nav className="w-1/2 h-full ">
-        <ul className="h-full flex justify-end items-center">
+      <nav className="w-1/2 h-full flex justify-end items-center">
+        <ul className="hidden h-full lg:flex justify-end items-center">
           {NAV_ITEMS.map((item) => (
             <li key={item.id} className="ml-5 text-HL_blue-dark font-semibold">
               <Link href={item.href}>
@@ -52,6 +52,22 @@ const Nav = () => {
             </li>
           ))}
         </ul>
+        <div className="lg:hidden h-full flex justify-end items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 text-HL_blue-dark"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </div>
       </nav>
     </div>
   );
