@@ -54,6 +54,7 @@ const FORM = {
 const Contact = () => {
   return (
     <SectionDefault
+      id="contact"
       display={"grid items-start"}
       padding={
         "pt-[5vh] md:pt-[10vh] md:px-[4rem] lg:px-[8rem] xl:px-[2rem] px-[1rem]"

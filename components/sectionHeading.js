@@ -5,9 +5,13 @@ const SectionHeading = ({
   mainHeadline,
   bottomHeadline,
   textColor,
+  id,
 }) => {
   return (
-    <div className="md:w-1/2 w-[90%] flex flex-col justify-center items-center">
+    <div
+      id={id}
+      className="md:w-1/2 w-[90%] flex flex-col justify-center items-center"
+    >
       <h3
         className={`capitalize ${textColor} md:text-lg text-md font-semibold text-center`}
       >

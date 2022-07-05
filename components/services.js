@@ -22,6 +22,7 @@ const Services = () => {
       </SectionCards>
 
       <SectionHeading
+        id="alianzas-estrategicas"
         topHeadline={"nuestras"}
         mainHeadline={"alianzas estratégicas"}
         textColor={"text-HL_brown"}
