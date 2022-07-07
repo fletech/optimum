@@ -6,6 +6,8 @@ import SectionCards from "../components/sectionCards";
 import { useContext } from "react";
 import { GlobalContext } from "../pages/_app";
 import ServiceCard from "./serviceCard";
+import { FORM_CLASSES } from "../lib/utils";
+import ButtonCustom from "./button";
 
 const Services = () => {
   const { services } = useContext(GlobalContext);
@@ -15,9 +17,9 @@ const Services = () => {
       <SectionHeading
         topHeadline={"nuestros"}
         mainHeadline={"servicios"}
-        textColor={"text-HL_brown"}
+        textColor={"text-secondary"}
       />
-      <SectionCards margin="mb-[4rem]">
+      <SectionCards margin="mb-[6rem]">
         <ServiceCard data={services} type="service" />
       </SectionCards>
 
@@ -25,14 +27,17 @@ const Services = () => {
         id="alianzas-estrategicas"
         topHeadline={"nuestras"}
         mainHeadline={"alianzas estratégicas"}
-        textColor={"text-HL_brown"}
+        textColor={"text-secondary"}
       />
       <SectionCards margin={"mb-[4rem]"}>
         <ServiceCard data={services} type="alliance" />
       </SectionCards>
-      <button className="text-md md:text-lg h-[3rem] md:w-[10rem] w-[8rem] text-white font-semibold bg-HL_brown rounded-full shadow-md border shadow-gray-300 ">
-        CONSULTAR
-      </button>
+
+      <ButtonCustom
+        content={"CONSULTAR"}
+        type={"button_secondary"}
+        customClasses={"min-h-[3rem] md:min-w-[15rem] md:max-w-[18rem] w-[60%]"}
+      />
     </SectionDefault>
   );
 };

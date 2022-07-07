@@ -1,8 +1,9 @@
 import React from "react";
-import { selectAnImage } from "../lib/utils";
+import { FORM_CLASSES, selectAnImage } from "../lib/utils";
 
 import { getStrapiMedia } from "../lib/media";
 import ReactMarkdown from "react-markdown";
+import ButtonCustom from "./button";
 
 //Resolver las props simplemente usando el context. Evitar usar props nuevamente
 const Hero = ({ homepage, images }) => {
@@ -11,7 +12,7 @@ const Hero = ({ homepage, images }) => {
   const coverImage = selectAnImage(images, coverTitle);
 
   return (
-    <div className="relative md:h-[93vh] h-[90vh] w-full overflow-hidden ">
+    <div className="relative md:h-[100vh] h-[92vh] h-[100vh] w-full overflow-hidden ">
       <div className="w-full h-full relative">
         <img
           src={coverImage.data.attributes.url}
@@ -21,9 +22,9 @@ const Hero = ({ homepage, images }) => {
 
       <div className="absolute w-full h-full top-0 left-0 bg-overlayBlack z-[100]"></div>
 
-      <div className="absolute z-200 top-1/2 left-1/2 px-[5%] -translate-x-1/2 -translate-y-1/2 w-full flex-col justify-around items-center z-[200] text-center ">
+      <div className="absolute z-200 top-1/2 left-1/2 px-[5%] -translate-x-1/2 -translate-y-1/2 w-full mt-[5vh] flex-col justify-around items-center z-[200] text-center ">
         <div className="w-full px-[10%] flex justify-center">
-          <p className="text-2xl md:text-3xl md:w-1/2 w-2/3 font-semibold text-HL_brown">
+          <p className="family-custom uppercase text-2xl md:text-3xl md:w-1/2 w-2/3 font-semibold text-primary-dark">
             {heroSubtitle}
           </p>
         </div>
@@ -40,9 +41,12 @@ const Hero = ({ homepage, images }) => {
             {heroDescription}
           </p>
         </div>
-        <button className="text-md md:text-lg h-[3rem] md:w-[10rem] w-[8rem] text-white font-semibold bg-HL_blue-dark border rounded-full shadow-md  shadow-gray-400 ">
-          VER MÁS
-        </button>
+
+        <ButtonCustom
+          content={"VER MÁS"}
+          type={"button_primary"}
+          customClasses={"min-h-[3rem] max-w-[10rem]"}
+        />
       </div>
     </div>
   );

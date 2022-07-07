@@ -48,9 +48,9 @@ const Testimonials = ({ testimonials = TESTIMONIALS }) => {
       display={"flex flex-col items-center"}
     >
       <SectionHeading
-        topHeadline={"Lo que "}
-        mainHeadline={"dicen de nosotros"}
-        textColor={"text-HL_blue-dark"}
+        topHeadline={"Algunas"}
+        mainHeadline={"Opiniones"}
+        textColor={"text-primary-dark"}
       />
       <div
         className={

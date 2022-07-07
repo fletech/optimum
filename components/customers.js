@@ -10,7 +10,7 @@ const Customers = () => {
         topHeadline={"algunos"}
         mainHeadline={"clientes"}
         bottomHeadline={"que nos eligen"}
-        textColor={"text-HL_brown"}
+        textColor={"text-secondary"}
       />
       <CustomerSlider />
     </SectionDefault>

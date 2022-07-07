@@ -40,12 +40,12 @@ const Nav = () => {
     >
       {/* // <div className="h-auto w-full fixed top-0 z-[300] bg-NAV_transparency flex"> */}
       <div className="w-1/2 h-full flex justify-start items-center">
-        <img alt="logo" src="/images/LOGO.svg" className="h-[70%]" />
+        <img alt="logo" src="/images/LOGO.svg" className="h-[60%]" />
       </div>
       <nav className="w-1/2 h-full flex justify-end items-center">
         <ul className="hidden h-full lg:flex justify-end items-center">
           {NAV_ITEMS.map((item) => (
-            <li key={item.id} className="ml-5 text-HL_blue-dark font-semibold">
+            <li key={item.id} className="ml-5 text-primary-dark font-semibold">
               <Link href={item.href}>
                 <a>{item.title}</a>
               </Link>
@@ -55,7 +55,7 @@ const Nav = () => {
         <div className="lg:hidden h-full flex justify-end items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 text-HL_blue-dark"
+            className="h- w-8 text-primary-dark"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

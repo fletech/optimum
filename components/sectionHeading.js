@@ -13,7 +13,7 @@ const SectionHeading = ({
       className="md:w-1/2 w-[90%] flex flex-col justify-center items-center"
     >
       <h3
-        className={`capitalize ${textColor} md:text-lg text-md font-semibold text-center`}
+        className={` family-custom uppercase ${textColor} md:text-lg text-md font-semibold text-center`}
       >
         {topHeadline}
       </h3>
@@ -24,7 +24,7 @@ const SectionHeading = ({
       </h2>
       {bottomHeadline && (
         <h3
-          className={`capitalize md:text-lg text-md font-semibold ${textColor} text-center`}
+          className={`family-custom uppercase md:text-lg text-md font-semibold ${textColor} text-center`}
         >
           {bottomHeadline}
         </h3>

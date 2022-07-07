@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <SectionDefault
         display={"flex justify-center items-center"}
-        classes={"w-full h-[10rem] bg-HL_blue-dark "}
+        classes={"w-full h-[10rem] bg-primary-dark "}
         padding={"p-4"}
       >
         <footer className="h-full flex flex-col justify-evenly items-center">

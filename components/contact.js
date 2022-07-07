@@ -49,7 +49,7 @@ const FORM = {
 };
 
 // const INPUT_TEXTAREA_CLASSES =
-//   "w-full text-HL_brown border border-1 p-2 hover:border-black focus:border-HL_brown focus:border-2 outline-none rounded-md active:autofill:text-HL_brown focus:invalid:border-red-500 focus:invalid:text-red-500  active:invalid:border-red-500 active:invalid:text-red-500 invalid:border-red-500 invalid:text-red-500";
+//   "w-full text-secondary border border-1 p-2 hover:border-black focus:border-secondary focus:border-2 outline-none rounded-md active:autofill:text-secondary focus:invalid:border-red-500 focus:invalid:text-red-500  active:invalid:border-red-500 active:invalid:text-red-500 invalid:border-red-500 invalid:text-red-500";
 
 const Contact = () => {
   return (
@@ -63,13 +63,13 @@ const Contact = () => {
       <div className="h-auto pb-[5vh]">
         <div className="h-full px-6 md:px-0  flex flex-col justify-center items-center">
           <SectionHeading
-            textColor={"text-HL_brown"}
+            textColor={"text-secondary"}
             topHeadline={"dejanos"}
             mainHeadline={"tu consulta"}
           />
           <div className="sm:w-[80%] md:w-[75%] lg:w-[60%] xl:w-[40%] ">
             <div className="w-full my-4 ">
-              <p className="font-semibold text-black">
+              <p className="font-light text-black">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Pellentesque eu sapien in sem, rutrum cursus libero.
               </p>

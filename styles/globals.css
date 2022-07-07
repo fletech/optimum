@@ -21,9 +21,14 @@ textarea,
 li,
 button {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    /* font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, */
-      Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+p.family-custom,
+h3.family-custom,
+h2.family-custom {
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 }
 
 a {

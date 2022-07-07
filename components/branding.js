@@ -15,7 +15,7 @@ const Branding = () => {
       <SectionHeading
         topHeadline={"por qué"}
         mainHeadline={"elegirnos?"}
-        textColor={"text-HL_blue-dark"}
+        textColor={"text-primary-dark"}
       />
       <SectionCards>
         <BrandingCard data={branding} type="service" />

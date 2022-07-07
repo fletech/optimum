@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         black: "#363636",
         overlayBlack: "rgba(54, 54, 54, 0.75)",
-        HL_blue: {
+        primary: {
           // light: "#8cd3e3",
           // medium: "#68cbe1",
           // dark: "#379cb3",
@@ -19,7 +19,12 @@ module.exports = {
           // medium: "#79B8C6",
           // dark: "#43a2b7",
         },
-        HL_brown: "rgb(227, 171, 50)",
+        // secondary: "rgb(227, 171, 50)",
+        // secondary_button: "rgb(238, 185, 72)",
+
+        secondary: "#DD674F",
+        secondary_button: "#f38069",
+        // secondary: "#FFC75B",
         NAV_transparency: "rgba(255, 255, 255,0.96)",
       },
     },

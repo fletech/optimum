@@ -3,9 +3,9 @@ import { getStrapiMedia } from "../lib/media";
 
 const BrandingCard = ({ data }) => {
   const BG_COLORS = [
-    "bg-HL_blue-light",
-    "bg-HL_blue-medium",
-    "bg-HL_blue-dark",
+    "bg-primary-light",
+    "bg-primary-medium",
+    "bg-primary-dark",
   ];
   return data.map((brand, index) => (
     <div

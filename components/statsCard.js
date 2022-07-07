@@ -15,7 +15,7 @@ const StatsCard = ({ stat }) => {
 
   return (
     <div className="h-auto w-auto md:p-4 py-2 px-1">
-      <h3 className="font-bold md:text-3xl text-lg text-HL_brown">
+      <h3 className="font-bold md:text-3xl text-lg text-secondary">
         <span className={`${type == "exact" ? "" : "mr-1"}`}>
           {TYPE_STAT[type]}
         </span>

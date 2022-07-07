@@ -1,5 +1,6 @@
 import React from "react";
 import { FORM_CLASSES } from "../lib/utils";
+import ButtonCustom from "./button";
 
 const ContactForm = ({ formData }) => {
   return (
@@ -33,12 +34,11 @@ const ContactForm = ({ formData }) => {
           }
         })}
       </div>
-      <button
-        className={`${FORM_CLASSES.input_textarea_primary} min-h-[4rem] font-semibold text-lg border-4 border-HL_brown hover:border-HL_brown
-        hover:bg-HL_brown hover:text-white hover:font-bold transition duration-300 ease hover:ease-out`}
-      >
-        {formData.button.content}
-      </button>
+      <ButtonCustom
+        content={formData.button.content}
+        type={"button_secondary"}
+        customClasses={"min-h-[4rem]"}
+      />
     </form>
   );
 };

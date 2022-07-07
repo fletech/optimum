@@ -11,10 +11,10 @@ const TestimonialCard = ({ testimonial }) => {
         />
       </div>
       <div className="flex flex-col mt-4">
-        <p className="font-bold text-lg text-HL_blue-dark">
+        <p className="font-bold text-lg text-primary-dark">
           {testimonial.attributes.name}
         </p>
-        <p className="text-HL_blue-dark my-2 font-light">
+        <p className="text-primary-dark my-2 font-light">
           {/* <p className="text-gray-300 my-2 font-light"> */}
           {testimonial.attributes.company}
         </p>

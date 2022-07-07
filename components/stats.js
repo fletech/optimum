@@ -51,7 +51,7 @@ const Stats = () => {
           mainHeadline={"algunos números..."}
           bottomHeadline={"...que nos dan confianza en cada gestión."}
           // bottomHeadline={"Lo que nos da confianza en cada gestión."}
-          textColor={"text-HL_brown"}
+          textColor={"text-secondary"}
         />
       </div>
       <div className="md:w-[45%] w-full h-auto text-white grid grid-cols-2">

@@ -12,7 +12,7 @@ const StatsHeading = ({
         {topHeadline}
       </p> */}
       <h2
-        className={`uppercase md:text-3xl text-2xl font-semibold my-2 text-left ${textColor}`}
+        className={`family-custom uppercase md:text-3xl text-2xl font-semibold my-2 text-left ${textColor}`}
       >
         {mainHeadline}
       </h2>
