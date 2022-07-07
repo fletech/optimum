@@ -40,7 +40,7 @@ const Nav = () => {
     >
       {/* // <div className="h-auto w-full fixed top-0 z-[300] bg-NAV_transparency flex"> */}
       <div className="w-1/2 h-full flex justify-start items-center">
-        <img alt="logo" src="/images/LOGO.svg" className="h-[60%]" />
+        <img alt="logo" src="/images/LOGO-brown.svg" className="h-[60%]" />
       </div>
       <nav className="w-1/2 h-full flex justify-end items-center">
         <ul className="hidden h-full lg:flex justify-end items-center">

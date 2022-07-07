@@ -24,7 +24,7 @@ const Hero = ({ homepage, images }) => {
 
       <div className="absolute z-200 top-1/2 left-1/2 px-[5%] -translate-x-1/2 -translate-y-1/2 w-full mt-[5vh] flex-col justify-around items-center z-[200] text-center ">
         <div className="w-full px-[10%] flex justify-center">
-          <p className="family-custom uppercase text-2xl md:text-3xl md:w-1/2 w-2/3 font-semibold text-primary-dark">
+          <p className="family-custom uppercase text-2xl md:text-3xl md:w-1/2 w-2/3 font-semibold text-secondary">
             {heroSubtitle}
           </p>
         </div>
@@ -45,7 +45,9 @@ const Hero = ({ homepage, images }) => {
         <ButtonCustom
           content={"VER MÁS"}
           type={"button_primary"}
-          customClasses={"min-h-[3rem] max-w-[10rem]"}
+          customClasses={
+            "min-h-[3rem] max-w-[10rem] bg-secondary  hover:bg-secondary_button focus:bg-secondary_button"
+          }
         />
       </div>
     </div>
