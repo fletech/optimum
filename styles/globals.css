@@ -24,6 +24,28 @@ button {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900 !important;
+}
+
+input,
+textarea,
+li,
+button {
+  font-weight: 800 !important;
+}
+
+input,
+textarea,
+span {
+  font-weight: 700 !important;
+}
+
 p.family-custom,
 h3.family-custom,
 h2.family-custom {
