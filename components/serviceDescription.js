@@ -8,10 +8,20 @@ const ServiceDescription = () => {
   return (
     <>
       <SectionDefault
-        display="flex justify-center items-center"
-        classes="w-[100%] h-full pb-[10vh]"
+        display="flex flex-col justify-center items-center"
+        classes="w-[100%] h-full mt-[10vh] pb-[10vh]"
       >
         <p>Descripción del servicio en {slug}</p>
+
+        <h2>
+          Todavía me falta esta sección,{" "}
+          <a
+            href="https://instagram.com/frangarcia.99?igshid=YmMyMTA2M2Y="
+            className="text-blue-500 underline"
+          >
+            @frangarcia.99
+          </a>
+        </h2>
         {/* <p>Descripción del servicio en {path}</p> */}
       </SectionDefault>
     </>
