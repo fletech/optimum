@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Link from "next/link";
 import { GlobalContext } from "../pages/_app";
 
-const NAV_ITEMS = [
+export const NAV_ITEMS = [
   {
     id: 1,
     title: "Inicio",
@@ -26,7 +26,7 @@ const NAV_ITEMS = [
   {
     id: 5,
     title: "Contactanos",
-    href: "/#contact",
+    href: "/#contacto",
   },
 ];
 
@@ -51,7 +51,10 @@ const Nav = () => {
       <nav className="w-1/2 h-full flex justify-end items-center">
         <ul className="hidden h-full lg:flex justify-end items-center">
           {NAV_ITEMS.map((item) => (
-            <li key={item.id} className="ml-5 text-primary-dark font-semibold">
+            <li
+              key={item.id}
+              className="li-nav ml-5 text-primary-dark font-semibold"
+            >
               <Link href={item.href}>
                 <a>{item.title}</a>
               </Link>

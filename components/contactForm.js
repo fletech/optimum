@@ -1,6 +1,10 @@
 import React from "react";
 import { FORM_CLASSES } from "../lib/utils";
-import ButtonCustom from "./button";
+import ButtonCustom from "./buttonCustom";
+const SUBMIT_HANDLER = (e) => {
+  console.log("clicked");
+  return e.preventDefault();
+};
 
 const ContactForm = ({ formData }) => {
   return (
@@ -35,6 +39,8 @@ const ContactForm = ({ formData }) => {
         })}
       </div>
       <ButtonCustom
+        submit={true}
+        handler={SUBMIT_HANDLER}
         content={formData.button.content}
         type={"button_secondary"}
         customClasses={"min-h-[4rem]"}

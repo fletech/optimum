@@ -35,7 +35,7 @@ h6 {
 
 input,
 textarea,
-li,
+li.li-nav,
 button {
   font-weight: 800 !important;
 }

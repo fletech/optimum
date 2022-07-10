@@ -54,11 +54,9 @@ const FORM = {
 const Contact = () => {
   return (
     <SectionDefault
-      id="contact"
+      id="contacto"
       display={"grid items-start"}
-      padding={
-        "pt-[5vh] md:pt-[10vh] md:px-[4rem] lg:px-[8rem] xl:px-[2rem] px-[1rem]"
-      }
+      padding={"md:px-[4rem] lg:px-[8rem] xl:px-[2rem] px-[1rem]"}
     >
       <div className="h-auto pb-[5vh]">
         <div className="h-full px-6 md:px-0  flex flex-col justify-center items-center">
@@ -66,6 +64,7 @@ const Contact = () => {
             textColor={"text-secondary"}
             topHeadline={"dejanos"}
             mainHeadline={"tu consulta"}
+            padding={"pt-[10vh]"}
           />
           <div className="sm:w-[80%] md:w-[75%] lg:w-[60%] xl:w-[40%] ">
             <div className="w-full my-4 ">

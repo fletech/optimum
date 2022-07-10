@@ -6,11 +6,12 @@ const SectionHeading = ({
   bottomHeadline,
   textColor,
   id,
+  padding,
 }) => {
   return (
     <div
       id={id}
-      className="md:w-1/2 w-[90%] flex flex-col justify-center items-center"
+      className={`md:w-1/2 w-[100%] mb-8 flex flex-col justify-center items-center ${padding}`}
     >
       <h3
         className={` family-custom uppercase ${textColor} md:text-lg text-md font-semibold text-center`}

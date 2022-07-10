@@ -5,7 +5,7 @@ const sectionDefault = ({ children, display, classes, padding, id }) => {
     <div
       id={id}
       className={` w-full ${
-        padding ? padding : "pt-[10vh] px-[5%]"
+        padding ? padding : "pt-[10vh] px-[10%]"
       }  ${display} ${classes ? classes : ""}`}
     >
       {children}

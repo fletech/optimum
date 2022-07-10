@@ -39,7 +39,7 @@ const MyApp = ({ Component, pageProps }) => {
         }}
       >
         <Component {...pageProps} />
-        <ServiceModal />
+        {/* <ServiceModal /> */}
       </GlobalContext.Provider>
     </>
   );

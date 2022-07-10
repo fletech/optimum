@@ -3,7 +3,7 @@ import { FORM_CLASSES, selectAnImage } from "../lib/utils";
 
 import { getStrapiMedia } from "../lib/media";
 import ReactMarkdown from "react-markdown";
-import ButtonCustom from "./button";
+import ButtonCustom from "./buttonCustom";
 
 //Resolver las props simplemente usando el context. Evitar usar props nuevamente
 const Hero = ({ homepage, images }) => {
@@ -43,6 +43,7 @@ const Hero = ({ homepage, images }) => {
         </div>
 
         <ButtonCustom
+          action={"/#servicios"}
           content={"VER MÁS"}
           type={"button_primary"}
           customClasses={

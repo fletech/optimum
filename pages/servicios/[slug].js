@@ -1,4 +1,3 @@
-import SectionDefault from "../../components/sectionDefault";
 import { fetchAPI } from "../../lib/api";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
