@@ -11,12 +11,12 @@ const NAV_ITEMS = [
   {
     id: 2,
     title: "Gestoría",
-    href: "/services/gestoria-del-automotor",
+    href: "/servicios/gestoria-del-automotor",
   },
   {
     id: 3,
     title: "Seguros",
-    href: "/services/seguros-generales",
+    href: "/servicios/seguros-generales",
   },
   {
     id: 4,
@@ -40,7 +40,13 @@ const Nav = () => {
     >
       {/* // <div className="h-auto w-full fixed top-0 z-[300] bg-NAV_transparency flex"> */}
       <div className="w-1/2 h-full flex justify-start items-center">
-        <img alt="logo" src="/images/LOGO-brown.svg" className="h-[60%]" />
+        <Link href={"/"}>
+          <img
+            alt="logo"
+            src="/images/LOGO-brown.svg"
+            className="h-[60%] cursor-pointer"
+          />
+        </Link>
       </div>
       <nav className="w-1/2 h-full flex justify-end items-center">
         <ul className="hidden h-full lg:flex justify-end items-center">
