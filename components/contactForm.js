@@ -8,21 +8,19 @@ const ContactForm = ({ formData }) => {
   const [loading, setLoading] = useState(false);
 
   const SUBMIT_HANDLER = (e) => {
-    console.log("clicked");
     setLoading(true);
     e.preventDefault();
     return emailjs
       .sendForm(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
+        "gestion_simple",
+        "template_nueva_consulta",
         form.current,
-        process.env.EMAILJS_API_KEY
+        "r-7YZ2iEsbddZNbnI"
       )
       .then(
         (result) => {
           result.text == "OK" ? setLoading(false) : null;
           form.current.reset();
-          console.log(result.text);
         },
         (error) => {
           console.log(error.text);
