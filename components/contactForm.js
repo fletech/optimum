@@ -10,15 +10,17 @@ const ContactForm = ({ formData }) => {
   const SUBMIT_HANDLER = (e) => {
     setLoading(true);
     e.preventDefault();
+
     return emailjs
       .sendForm(
-        "gestion_simple",
+        "service_zoho",
         "template_nueva_consulta",
         form.current,
         "r-7YZ2iEsbddZNbnI"
       )
       .then(
         (result) => {
+          console.log(result);
           result.text == "OK" ? setLoading(false) : null;
           form.current.reset();
         },
