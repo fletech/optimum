@@ -45,7 +45,7 @@ const Hero = ({ homepage, images }) => {
         <ButtonCustom
           action={"/#servicios"}
           content={"VER MÁS"}
-          type={"button_primary"}
+          button_type={"button_primary"}
           customClasses={
             "min-h-[3rem] max-w-[10rem] bg-secondary  hover:bg-secondary_button focus:bg-secondary_button"
           }

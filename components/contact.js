@@ -7,21 +7,21 @@ const FORM = {
   inputs: [
     {
       type: "text",
-      name: "nombre",
+      name: "name",
       value: "",
       placeholder: "ej: Gestión",
       label: "Nombre",
     },
     {
       type: "text",
-      name: "apellido",
+      name: "surname",
       value: "",
       placeholder: "ej: Simple",
       label: "Apellido",
     },
     {
       type: "email",
-      name: "e-mail",
+      name: "email",
       value: "",
       placeholder: "ej: hola@gestionsimple.ar",
       label: "Email",
@@ -35,7 +35,7 @@ const FORM = {
     },
     {
       type: "textarea",
-      name: "query",
+      name: "message",
       value: "",
       placeholder: "Escriba su consulta aquí...",
       label: "Mensaje",

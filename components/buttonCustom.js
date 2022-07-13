@@ -1,23 +1,31 @@
 import Link from "next/link";
 import React from "react";
 import { FORM_CLASSES } from "../lib/utils";
+import Spinner from "./spinner";
 
 const ButtonCustom = ({
   type,
   content,
   customClasses,
   action,
-  submit,
-  handler,
+  loading,
+  button_type,
 }) => {
   return (
     <button
-      className={`${FORM_CLASSES[type]} ${customClasses} `}
-      onClick={submit && ((e) => handler(e))}
+      type={type}
+      className={`${FORM_CLASSES[button_type]} ${customClasses} `}
       // border-4 border-secondary hover:border-secondary hover:bg-secondary hover:text-white
     >
       {action && <Link href={action}>{content}</Link>}
-      {submit && <p>{content}</p>}
+      {loading ? (
+        <p className="flex items-center justify-center uppercase">
+          <Spinner />
+          Enviando
+        </p>
+      ) : !action ? (
+        <p>{content}</p>
+      ) : null}
     </button>
   );
 };

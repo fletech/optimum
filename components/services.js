@@ -39,7 +39,7 @@ const Services = () => {
       <ButtonCustom
         action={"#contacto"}
         content={"CONSULTAR"}
-        type={"button_secondary"}
+        button_type={"button_secondary"}
         customClasses={
           " min-h-[3rem] md:min-w-[15rem] md:max-w-[18rem] w-[60%]"
         }

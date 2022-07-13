@@ -95,7 +95,7 @@ const ServiceDescription = () => {
           <ButtonCustom
             action={CONTENT.button.action(slug)}
             content={CONTENT.button.content}
-            type={"button_secondary"}
+            button_type={"button_secondary"}
             customClasses="max-w-[14rem] uppercase"
           />
         </div>
