@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         black: "#363636",
+        blackModal: "rgba(54, 54, 54, 0.93)",
         overlayBlack: "rgba(54, 54, 54, 0.75)",
         NAV_transparency: "rgba(255, 255, 255,0.96)",
         primary: {
