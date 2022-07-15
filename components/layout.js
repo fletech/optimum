@@ -7,7 +7,7 @@ import LayoutOverlay from "./layoutOverlay";
 const Layout = ({ children, categories, seo }) => {
   return (
     <div className="relative">
-      <LayoutOverlay />
+      {/* <LayoutOverlay /> */}
       <Nav />
       {children}
       <Footer />
