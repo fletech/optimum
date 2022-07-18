@@ -6,13 +6,13 @@ const Footer = () => {
     <>
       <SectionDefault
         display={"flex justify-center items-center"}
-        classes={"w-full h-[10rem] bg-primary-dark "}
+        classes={"w-full h-[10rem] bg-black "}
         padding={"p-4"}
       >
         <footer className="h-full flex flex-col justify-evenly items-center">
           <img
             alt="logo-white"
-            src="/images/LOGO-white.svg"
+            src="/images/LOGO-TEST-blanco.svg"
             className=" max-h-[3rem]"
           />
           <small className="text-white font-semibold ">Hecho con 🤍</small>

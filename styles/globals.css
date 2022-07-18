@@ -69,10 +69,10 @@ li {
 input.primary:-webkit-autofill {
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgb(227, 171, 50);
+  -webkit-text-fill-color: #363636;
 }
 input.secondary:-webkit-autofill {
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgb(75, 159, 175);
+  -webkit-text-fill-color: rgb(253, 0, 118);
 }

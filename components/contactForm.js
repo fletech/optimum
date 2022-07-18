@@ -36,8 +36,11 @@ const ContactForm = ({ formData }) => {
           if (input.type != "textarea") {
             return (
               <div key={input.name}>
-                <span className={FORM_CLASSES.label}>{input.label}</span>
+                <label className={FORM_CLASSES.label} htmlFor={input.name}>
+                  {input.label}
+                </label>
                 <input
+                  id={input.name}
                   name={input.name}
                   className={FORM_CLASSES.input_textarea_primary}
                   type={input.type}
@@ -48,8 +51,12 @@ const ContactForm = ({ formData }) => {
           } else {
             return (
               <div key={input.name}>
-                <span className={FORM_CLASSES.label}>{input.label}</span>
+                <label className={FORM_CLASSES.label} htmlFor={input.name}>
+                  {input.label}
+                </label>
+
                 <textarea
+                  id={input.name}
                   name={input.name}
                   className={`min-h-[3rem] max-h-[6rem] ${FORM_CLASSES.input_textarea_primary}`}
                   type={input.type}

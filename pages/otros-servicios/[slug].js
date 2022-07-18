@@ -19,7 +19,6 @@ const ServicePage = ({ homepage, serviceRequired }) => {
 
 export async function getStaticProps(context) {
   let { slug } = context.params;
-
   const [homepageRes] = await Promise.all([
     fetchAPI("/homepage", {
       populate: {
@@ -29,7 +28,6 @@ export async function getStaticProps(context) {
       },
     }),
   ]);
-
   const servicesRes = await fetchAPI(`/services/${slug}`, { populate: "*" });
   console.log(servicesRes.data.attributes.logo);
 
@@ -44,12 +42,12 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const servicesRes = await fetchAPI("/services");
-  const SERVICES = servicesRes.data.filter(
-    (service) => service.attributes.type == "service"
+  const OTHERS_SERVICES = servicesRes.data.filter(
+    (service) => service.attributes.type == "alliance"
   );
 
   return {
-    paths: SERVICES.map((service) => {
+    paths: OTHERS_SERVICES.map((service) => {
       return {
         params: {
           slug: service.attributes.slug.toString(),

@@ -20,8 +20,12 @@ const ServiceCard = ({ data, type }) => {
       service.attributes.type == type && (
         <Link
           key={service.attributes.slug}
-          href="/servicios/[slug]"
-          as={`/servicios/${service.attributes.slug}`}
+          href={`/${
+            type == "service" ? "servicios" : "otros-servicios"
+          }/[slug]`}
+          as={`/${type == "service" ? "servicios" : "otros-servicios"}/${
+            service.attributes.slug
+          }`}
         >
           <div
             key={service.attributes.slug}

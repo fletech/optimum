@@ -43,7 +43,7 @@ const Nav = () => {
         <Link href={"/"}>
           <img
             alt="logo"
-            src="/images/LOGO-brown.svg"
+            src="/images/LOGO-TEST.svg"
             className="h-[60%] cursor-pointer"
           />
         </Link>

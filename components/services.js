@@ -21,9 +21,18 @@ const Services = () => {
         textColor={"text-secondary"}
         padding={"pt-[10vh]"}
       />
-      <SectionCards>
+      <SectionCards margin={"mb-[6rem]"}>
         <ServiceCard data={services} type="service" />
       </SectionCards>
+
+      <ButtonCustom
+        action={"/#contacto"}
+        content={"CONSULTAR"}
+        button_type={"button_secondary"}
+        customClasses={
+          " min-h-[3rem] md:min-w-[15rem] md:max-w-[18rem] w-[60%]"
+        }
+      />
 
       <SectionHeading
         id="alianzas-estrategicas"
@@ -35,15 +44,6 @@ const Services = () => {
       <SectionCards margin={"mb-[4rem]"}>
         <ServiceCard data={services} type="alliance" />
       </SectionCards>
-
-      <ButtonCustom
-        action={"#contacto"}
-        content={"CONSULTAR"}
-        button_type={"button_secondary"}
-        customClasses={
-          " min-h-[3rem] md:min-w-[15rem] md:max-w-[18rem] w-[60%]"
-        }
-      />
     </SectionDefault>
   );
 };

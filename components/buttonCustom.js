@@ -17,15 +17,15 @@ const ButtonCustom = ({
       className={`${FORM_CLASSES[button_type]} ${customClasses} `}
       // border-4 border-secondary hover:border-secondary hover:bg-secondary hover:text-white
     >
-      {action && <Link href={action}>{content}</Link>}
-      {loading ? (
-        <p className="flex items-center justify-center uppercase">
-          <Spinner />
-          Enviando
-        </p>
-      ) : !action ? (
-        <p>{content}</p>
-      ) : null}
+      {(action && <Link href={action}>{content}</Link>) ||
+        (loading ? (
+          <p className="flex items-center justify-center uppercase">
+            <Spinner />
+            Enviando
+          </p>
+        ) : !action ? (
+          <p>{content}</p>
+        ) : null)}
     </button>
   );
 };
