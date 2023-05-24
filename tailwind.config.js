@@ -10,17 +10,19 @@ module.exports = {
         blackModal: "rgba(54, 54, 54, 0.93)",
         overlayBlack: "rgba(54, 54, 54, 0.75)",
         NAV_transparency: "rgba(255, 255, 255,0.96)",
-        primary: {
-          light: "rgb(140, 49, 244)",
-          medium: "rgb(127, 23, 246)",
-          dark: "rgb(118, 0, 253)",
-        },
-
-        // primary2: {
-        //   light2: "rgb(145, 206, 220)",
-        //   medium2: "rgb(121, 184, 198)",
-        //   dark2: "rgb(75, 159, 175)",
+        // primary: {
+        //   light: "rgb(110, 73, 152)",
+        //   medium: "rgb(102, 33, 180)",
+        //   dark: "rgb(111, 22, 214)",
         // },
+
+        primary: {
+          // light: "rgb(117, 192, 209)",
+          light: "rgb(58, 158, 180)",
+          medium: "rgb(58, 158, 180)",
+          dark: "rgb(58, 158, 180)",
+          // dark: "#177e92",
+        },
         secondary: "rgb(253, 0, 72)",
         secondary_button: "rgb(214, 30, 82)",
         // secondary2: "rgb(227, 171, 50)",
