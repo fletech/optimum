@@ -9,6 +9,7 @@ import "../styles/Slider.css";
 import { createContext } from "react";
 import { fetchAPI } from "../lib/api";
 import { getStrapiMedia } from "../lib/media";
+import { content } from "../lib/content";
 
 // Store Strapi Global object in context
 export const GlobalContext = createContext({});
@@ -52,9 +53,10 @@ const MyApp = ({ Component, pageProps }) => {
 MyApp.getInitialProps = async (ctx) => {
   // Calls page's `getInitialProps` and fills `appProps.pageProps`
   const appProps = await App.getInitialProps(ctx);
-  // Fetch global site settings from Strapi
+  //Fetch global site settings from Strapi
   const globalRes = await fetchAPI("/global", {
     populate: {
+      siteName: "*",
       favicon: "*",
       defaultSeo: {
         populate: "*",
@@ -66,9 +68,7 @@ MyApp.getInitialProps = async (ctx) => {
     populate: "*",
   });
 
-  const servicesRes = await fetchAPI("/services", {
-    populate: "*",
-  });
+  const servicesRes = content.services;
 
   const brandingRes = await fetchAPI("/brandings", {
     populate: "*",

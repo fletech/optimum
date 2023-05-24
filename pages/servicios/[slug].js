@@ -2,6 +2,7 @@ import { fetchAPI } from "../../lib/api";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import ServiceDescription from "../../components/serviceDescription";
+import { content } from "../../lib/content";
 
 // import { useRouter } from "next/router";
 // import Modal from "react-modal";
@@ -40,12 +41,13 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const servicesRes = await fetchAPI("/services");
+  const servicesRes = content.services;
   return {
     paths: servicesRes.data.map((service) => {
+      console.log(service);
       return {
         params: {
-          slug: service.attributes.slug.toString(),
+          slug: service.attributes.slug,
         },
       };
     }),
