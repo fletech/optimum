@@ -13,8 +13,8 @@ const Landing = ({ homepage, images }) => {
     <>
       {/* <Seo seo={homepage.attributes.seo} /> */}
       <Hero />
-      {/* REEMPLAZO */}
-      {/* <Hero homepage={homepage} images={images} /> */}
+
+      <Hero homepage={homepage} images={images} />
       <Banner />
       <Services />
       <Branding />

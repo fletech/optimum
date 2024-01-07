@@ -21,8 +21,6 @@ const LayoutOverlay = () => {
           </p>
           <div className="flex w-full items-center justify-center mb-8">
             <a
-              href={`https://api.whatsapp.com/send/?phone=3513855320&text&app_absent=0`}
-              /* REEMPLAZO */
               // href={`https://api.whatsapp.com/send/?phone=${contact.attributes.whatsapp}&text&app_absent=0`}
               target="_blank"
               rel="noreferrer"

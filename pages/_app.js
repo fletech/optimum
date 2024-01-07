@@ -96,31 +96,16 @@ MyApp.getInitialProps = async (ctx) => {
     customers: content.customers,
   };
 
-  console.log("CONTENT");
-  console.log(content);
   // Pass the data to our page via props
   return {
     ...appProps,
     pageProps: {
       homepage: content.homepage,
+      branding: content.branding,
       services: content.services,
+      customers: content.customers,
     },
   };
-  {
-    /* REEMPLAZO */
-  }
-
-  // return {
-  //   ...appProps,
-  //   pageProps: {
-  //     global: globalRes.data,
-  //     homepage: homepageRes.data,
-  //     services: servicesRes.data,
-  //     branding: brandingRes.data,
-  //     contact: contactRes.data,
-  //     customers: customersRes.data,
-  //   },
-  // };
 };
 
 export default MyApp;

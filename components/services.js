@@ -16,11 +16,7 @@ const services = [
 ];
 
 const Services = () => {
-  {
-    /* REEMPLAZO */
-  }
   const { services } = useContext(GlobalContext);
-  console.log(services);
 
   return (
     <SectionDefault display={"flex flex-col items-center"} padding={"pt-0"}>

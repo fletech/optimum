@@ -6,17 +6,12 @@ import Layout from "../components/layout";
 import { fetchAPI } from "../lib/api";
 
 const Home = () => {
-  {
-    /* REEMPLAZO */
-  }
   // const Home = ({ homepage, images }) => {
   //TODO: HACER UN JSON APARTE CON LOS TITULOS, Y TEXTOS QUE NO VIENEN DESDE STRAPI
 
   return (
     <Layout>
       <Landing />
-      {/* REEMPLAZO */}
-      {/* <Landing homepage={homepage} images={images} /> */}
     </Layout>
   );
 };

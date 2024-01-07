@@ -22,7 +22,7 @@ const ServicePage = ({ slug, homepage }) => {
 export async function getStaticProps(context) {
   let { slug } = context.params;
   const homepageRes = content.homepage;
-
+  // REEMPLAZO
   // const [homepageRes] = await Promise.all([
   //   fetchAPI("/homepage", {
   //     populate: {
@@ -37,7 +37,7 @@ export async function getStaticProps(context) {
     props: {
       slug,
       homepage: homepageRes,
-      // REEMPLAZO
+
       // homepage: homepageRes.data,
     },
   };

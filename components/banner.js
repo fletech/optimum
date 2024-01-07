@@ -7,7 +7,6 @@ import { GlobalContext } from "../pages/_app";
 
 const Banner = () => {
   const { homepage } = useContext(GlobalContext);
-  console.log(homepage);
 
   return (
     <SectionDefault display={"flex justify-center items-center"}>

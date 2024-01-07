@@ -20,7 +20,7 @@ const Branding = () => {
         textColor={"text-primary-dark"}
       />
       <SectionCards>
-        <BrandingCard data={brands} type="service" />
+        <BrandingCard data={branding.data} type="service" />
       </SectionCards>
     </SectionDefault>
   );
