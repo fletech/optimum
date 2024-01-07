@@ -6,6 +6,9 @@ import { useRouter } from "next/router";
 
 // import { GlobalContext } from "../pages/_app";
 
+{
+  /* REEMPLAZO */
+}
 const ServiceCard = ({ data, type }) => {
   // const router = useRouter();
   // const { setModal } = useContext(GlobalContext);

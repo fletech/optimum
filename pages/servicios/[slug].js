@@ -13,7 +13,7 @@ const ServicePage = ({ slug, homepage }) => {
 
   return (
     <Layout>
-      <Seo seo={homepage.attributes.seo} />
+      {/* <Seo seo={homepage.attributes.seo} /> */}
       <ServiceDescription />
     </Layout>
   );
@@ -21,21 +21,24 @@ const ServicePage = ({ slug, homepage }) => {
 
 export async function getStaticProps(context) {
   let { slug } = context.params;
+  const homepageRes = content.homepage;
 
-  const [homepageRes] = await Promise.all([
-    fetchAPI("/homepage", {
-      populate: {
-        hero: "*",
-        seo: { populate: "*" },
-        banner: "*",
-      },
-    }),
-  ]);
+  // const [homepageRes] = await Promise.all([
+  //   fetchAPI("/homepage", {
+  //     populate: {
+  //       hero: "*",
+  //       seo: { populate: "*" },
+  //       banner: "*",
+  //     },
+  //   }),
+  // ]);
 
   return {
     props: {
       slug,
-      homepage: homepageRes.data,
+      homepage: homepageRes,
+      // REEMPLAZO
+      // homepage: homepageRes.data,
     },
   };
 }
@@ -44,7 +47,6 @@ export async function getStaticPaths() {
   const servicesRes = content.services;
   return {
     paths: servicesRes.data.map((service) => {
-      console.log(service);
       return {
         params: {
           slug: service.attributes.slug,

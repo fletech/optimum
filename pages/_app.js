@@ -21,10 +21,10 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <link
+        {/* <link
           rel="shortcut icon"
           href={getStrapiMedia(global.attributes.favicon)}
-        />
+        /> */}
       </Head>
       <GlobalContext.Provider
         value={{
@@ -54,48 +54,73 @@ MyApp.getInitialProps = async (ctx) => {
   // Calls page's `getInitialProps` and fills `appProps.pageProps`
   const appProps = await App.getInitialProps(ctx);
   //Fetch global site settings from Strapi
-  const globalRes = await fetchAPI("/global", {
-    populate: {
-      siteName: "*",
-      favicon: "*",
-      defaultSeo: {
-        populate: "*",
-      },
-    },
-  });
+  {
+    /* REEMPLAZO */
+  }
 
-  const homepageRes = fetchAPI("/homepage", {
-    populate: "*",
-  });
+  // const globalRes = await fetchAPI("/global", {
+  //   populate: {
+  //     siteName: "*",
+  //     favicon: "*",
+  //     defaultSeo: {
+  //       populate: "*",
+  //     },
+  //   },
+  // });
 
-  const servicesRes = content.services;
+  // const homepageRes = fetchAPI("/homepage", {
+  //   populate: "*",
+  // });
 
-  const brandingRes = await fetchAPI("/brandings", {
-    populate: "*",
-  });
+  // const servicesRes = content.services;
 
-  const contactRes = await fetchAPI("/contact", {
-    populate: "*",
-  });
-  const customersRes = await fetchAPI("/customers", {
-    populate: "*",
-  });
+  // const brandingRes = await fetchAPI("/brandings", {
+  //   populate: "*",
+  // });
+
+  // const contactRes = await fetchAPI("/contact", {
+  //   populate: "*",
+  // });
+  // const customersRes = await fetchAPI("/customers", {
+  //   populate: "*",
+  // });
 
   //TODO: hacer un llamado a la API de strapi por cada endpoint y almacenarla en el context.
-  //TODO: investigar si se puede.
+  //TODO: investigar si se puede.+
 
+  const data = {
+    global: content.global,
+    homepage: content.homepage,
+    branding: content.brandings,
+    contact: content.contact,
+    customers: content.customers,
+  };
+
+  console.log("CONTENT");
+  console.log(content);
   // Pass the data to our page via props
   return {
     ...appProps,
     pageProps: {
-      global: globalRes.data,
-      homepage: homepageRes.data,
-      services: servicesRes.data,
-      branding: brandingRes.data,
-      contact: contactRes.data,
-      customers: customersRes.data,
+      homepage: content.homepage,
+      services: content.services,
     },
   };
+  {
+    /* REEMPLAZO */
+  }
+
+  // return {
+  //   ...appProps,
+  //   pageProps: {
+  //     global: globalRes.data,
+  //     homepage: homepageRes.data,
+  //     services: servicesRes.data,
+  //     branding: brandingRes.data,
+  //     contact: contactRes.data,
+  //     customers: customersRes.data,
+  //   },
+  // };
 };
 
 export default MyApp;

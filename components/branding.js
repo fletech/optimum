@@ -7,6 +7,8 @@ import { useContext } from "react";
 import { GlobalContext } from "../pages/_app";
 import BrandingCard from "./brandingCard";
 
+const brands = ["brand_one", "brand_two"];
+
 const Branding = () => {
   const { branding } = useContext(GlobalContext);
 
@@ -18,7 +20,7 @@ const Branding = () => {
         textColor={"text-primary-dark"}
       />
       <SectionCards>
-        <BrandingCard data={branding} type="service" />
+        <BrandingCard data={brands} type="service" />
       </SectionCards>
     </SectionDefault>
   );

@@ -9,7 +9,16 @@ import ServiceCard from "./serviceCard";
 import { FORM_CLASSES } from "../lib/utils";
 import ButtonCustom from "./buttonCustom";
 
+const services = [
+  { attributes: { slug: "branding", title: "Branding", type: "service" } },
+  { attributes: { slug: "web", title: "Web", type: "service" } },
+  { attributes: { slug: "ecommerce", title: "Ecommerce", type: "service" } },
+];
+
 const Services = () => {
+  {
+    /* REEMPLAZO */
+  }
   const { services } = useContext(GlobalContext);
   console.log(services);
 
@@ -23,7 +32,7 @@ const Services = () => {
         padding={"pt-[10vh]"}
       />
       <SectionCards>
-        <ServiceCard data={services} type="service" />
+        <ServiceCard data={services.data} type="service" />
       </SectionCards>
 
       <SectionHeading
@@ -34,7 +43,7 @@ const Services = () => {
         padding={"pt-[10vh]"}
       />
       <SectionCards margin={"mb-[4rem]"}>
-        <ServiceCard data={services} type="alliance" />
+        <ServiceCard data={services.data} type="alliance" />
       </SectionCards>
 
       <ButtonCustom

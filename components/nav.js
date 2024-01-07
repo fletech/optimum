@@ -35,9 +35,15 @@ const Nav = () => {
   return (
     <div
       className={`${
-        modal ? "hidden" : ""
+        false ? "hidden" : ""
       } md:h-[8vh] h-[10vh] fixed top-0 z-[800] bg-NAV_transparency hover:bg-white w-[100%] px-[10%] flex shadow-md shadow-gray-400`}
     >
+      {/* REEMPLAZO */}
+      {/* <div
+      className={`${
+        modal ? "hidden" : ""
+      } md:h-[8vh] h-[10vh] fixed top-0 z-[800] bg-NAV_transparency hover:bg-white w-[100%] px-[10%] flex shadow-md shadow-gray-400`}
+    > */}
       {/* // <div className="h-auto w-full fixed top-0 z-[300] bg-NAV_transparency flex"> */}
       <div className="w-1/2 h-full flex justify-start items-center">
         <Link href={"/"}>

@@ -7,7 +7,8 @@ import { GlobalContext } from "../pages/_app";
 
 const Banner = () => {
   const { homepage } = useContext(GlobalContext);
-  // console.log(GlobalContext.homepage);
+  console.log(homepage);
+
   return (
     <SectionDefault display={"flex justify-center items-center"}>
       {/* <div className="header text-white"> */}
@@ -15,13 +16,13 @@ const Banner = () => {
         <div className="flex flex-col justify-evenly items-center  ">
           <BannerTextCard>
             <h2 className="family-custom uppercase text-3xl md:text-3xl lg:text-4xl font-bold text-left text-primary-dark">
-              {homepage.attributes.banner.title}
+              {homepage.attributes.data.banner.title}
             </h2>
           </BannerTextCard>
 
           <BannerTextCard>
             <p className="text-xl md:text-xl lg:text-2xl font-light md:font-semibold text-black">
-              {homepage.attributes.banner.description}
+              {homepage.attributes.data.banner.description}
             </p>
           </BannerTextCard>
         </div>

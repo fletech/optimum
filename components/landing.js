@@ -11,8 +11,10 @@ import Testimonials from "./testimonials";
 const Landing = ({ homepage, images }) => {
   return (
     <>
-      <Seo seo={homepage.attributes.seo} />
-      <Hero homepage={homepage} images={images} />
+      {/* <Seo seo={homepage.attributes.seo} /> */}
+      <Hero />
+      {/* REEMPLAZO */}
+      {/* <Hero homepage={homepage} images={images} /> */}
       <Banner />
       <Services />
       <Branding />

@@ -5,17 +5,40 @@ import { getStrapiMedia } from "../lib/media";
 import ReactMarkdown from "react-markdown";
 import ButtonCustom from "./buttonCustom";
 
+const homepage = {
+  attributes: {
+    hero: {
+      heroTitle: "Gestión y Eficiencia",
+      heroSubtitle: "simple",
+      heroDescription:
+        "En nuestras manos depositás la tranquilidad de saber que  cumplimos con tus requerimientos.",
+      coverTitle: "coverTitle",
+      coverImage:
+        "https://res.cloudinary.com/fletech/image/upload/v1655946024/small_hero_bcg_4d95185880.png",
+    },
+    banner: {
+      title: "Qué hacemos?",
+      description:
+        "Recibimos tu consulta, analizamos el contexto y te ofrecemos el asesoramiento que mejor se adapta a tu solicitud, ya que contamos con una amplia gama de servicios propios, y otros servicios de profesionales aliados, para brindarte un servicio integral. ENCONTRÁ EL TUYO.",
+    },
+  },
+};
+
 //Resolver las props simplemente usando el context. Evitar usar props nuevamente
-const Hero = ({ homepage, images }) => {
-  const { heroTitle, heroSubtitle, heroDescription, coverTitle } =
+const Hero = ({ images }) => {
+  const { heroTitle, heroSubtitle, heroDescription, coverImage } =
     homepage.attributes.hero;
-  const coverImage = selectAnImage(images, coverTitle);
+
+  // const Hero = ({ homepage, images }) => {
+  //   const { heroTitle, heroSubtitle, heroDescription, coverTitle } =
+  //     homepage.attributes.hero;
+  //   const coverImage = selectAnImage(images, coverTitle);
 
   return (
-    <div className="relative md:h-[100vh] h-[92vh] h-[100vh] w-full overflow-hidden ">
+    <div className="relative md:h-[100vh] h-[92vh] w-full overflow-hidden ">
       <div className="w-full h-full relative">
         <img
-          src={coverImage.data.attributes.url}
+          src={coverImage}
           className="h-full w-full object-cover brightness-100"
         />
       </div>
