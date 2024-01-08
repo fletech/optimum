@@ -12,7 +12,6 @@ const Landing = ({ homepage, images }) => {
   return (
     <>
       {/* <Seo seo={homepage.attributes.seo} /> */}
-      <Hero />
 
       <Hero homepage={homepage} images={images} />
       <Banner />
