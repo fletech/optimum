@@ -23,6 +23,16 @@ const ServiceCard = ({ data, type }) => {
           href="/servicios/[slug]"
           as={`/servicios/${service.attributes.slug}`}
         >
+          {/* // <Link
+        //   key={service.attributes.slug}
+        //   href={`/${
+        //     type == "service" ? "servicios" : "otros-servicios"
+        //   }/[slug]`}
+        //   as={`/${type == "service" ? "servicios" : "otros-servicios"}/${
+        //     service.attributes.slug
+        //   }`}
+        // > */}
+
           <div
             key={service.attributes.slug}
             className="relative flex flex-1 flex-wrap flex-col justify-evenly items-center bg-white mx-6 mt-4 md:mt-8 md:h-[18vh] min-h-[15vh] md:min-w-[15rem] md:max-w-[18rem] w-[60%] rounded-md border hover:border-2 border-gray-300 py-4 hover:shadow-lg hover:shadow-slate-200 cursor-pointer font-semibold hover:font-bold hover:scale-110 transition-{scale} ease duration-200"

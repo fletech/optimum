@@ -8,34 +8,35 @@ const TESTIMONIALS = [
   {
     id: 1,
     attributes: {
-      name: "Marcos Galperín",
+      name: "Agustin Lambiase Rojas",
       testimonial:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sunt expedita dolorum natus explicabo quasi doloribus animi veritatis esse minus placeat ipsam. Quod repudiandae natus perspiciatis explicabo architecto error iure!",
-      company: "SEO @ Mercado Libre",
+        "En Gestion Simple nos entendieron desde el momento uno los requerimientos y tuvimos la flota en funcionamiento en menos de 48 horas. La atención y el servicio es excelente. Recomendamos a Gestion Simple sin lugar a dudas. ",
+      company: "Gerente @ El Escuadrón Servicios",
       image: ["image"],
-      imageAvatar: "fake-profile-galperin.png",
+      imageAvatar: "lambiase.jpg",
     },
   },
   {
     id: 2,
     attributes: {
-      name: "Elon Musk",
+      name: "Graciela Capella",
       testimonial:
-        "Libero, sunt expedita dolorum natus explicabo quasi doloribus animi veritatis esse minus placeat ipsam. Quod repudiandae natus, error iure!",
-      company: "SEO @ Tesla",
+        "Depositamos en Silvina y Gestión Simple la confianza para ser el último contacto con nuestros clientes. Trato y profesionalidad destacables.",
+      company: "Contable @ Beta Camiones",
       image: ["image"],
-      imageAvatar: "fake-profile.png",
+      imageAvatar: "capella.jpeg",
     },
   },
+
   {
     id: 3,
     attributes: {
-      name: "Mark Zuckerberg",
+      name: "Agustín Caceres ",
       testimonial:
-        "Odit sit deleniti voluptas adipisci inventore totam. Amet incidunt sapiente hic aliquam debitis nobis architecto quibusdam fugiat sit harum, laboriosam perspiciatis vel dolorum magni magnam accusamus maxime sed facere quo natus aut, accusantium quod et aspernatur!",
-      company: "SEO @ Meta",
+        "Gestión Simple nos dio la tranquilidad de saber que lo que nosotros creíamos un problema, en realidad era factible de hacerse gracias a la gran profesionalidad de Silvina. Excelente servicio y atención. ",
+      company: "Director @ Ciudadanías y Gestiones",
       image: ["image"],
-      imageAvatar: "fake.png",
+      imageAvatar: "caceres.jpeg",
     },
   },
 ];

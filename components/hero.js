@@ -70,7 +70,7 @@ const Hero = ({ images }) => {
           content={"VER MÁS"}
           button_type={"button_primary"}
           customClasses={
-            "min-h-[3rem] max-w-[10rem] bg-secondary  hover:bg-secondary_button focus:bg-secondary_button"
+            "w-auto h-auto bg-secondary  hover:bg-secondary_button focus:bg-secondary_button"
           }
         />
       </div>
