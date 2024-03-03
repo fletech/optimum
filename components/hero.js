@@ -4,6 +4,7 @@ import { FORM_CLASSES, selectAnImage } from "../lib/utils";
 import { getStrapiMedia } from "../lib/media";
 import ReactMarkdown from "react-markdown";
 import ButtonCustom from "./buttonCustom";
+import Link from "next/link";
 
 const homepage = {
   attributes: {
@@ -66,13 +67,16 @@ const Hero = ({ images }) => {
         </div>
 
         <ButtonCustom
-          action={"/#servicios"}
-          content={"VER MÁS"}
           button_type={"button_primary"}
-          customClasses={
-            "w-auto h-auto bg-secondary  hover:bg-secondary_button focus:bg-secondary_button"
-          }
-        />
+          width={"w-[300px] md:w-[400px]"}
+          height={"h-[3rem]"}
+        >
+          <Link className="w-full h-full" href="/#servicios">
+            <p className="w-full h-full flex items-center justify-center uppercase">
+              Ver más
+            </p>
+          </Link>
+        </ButtonCustom>
       </div>
     </div>
   );

@@ -39,7 +39,6 @@ const STRUCTURE = {
 };
 
 const ServiceDescription = ({ serviceRequested }) => {
-  console.log(serviceRequested);
   const router = useRouter();
   const { slug } = router.query;
 
@@ -73,7 +72,7 @@ const ServiceDescription = ({ serviceRequested }) => {
                 <p
                   className={`mr-6 text-gray-400 cursor-pointer ${
                     element.slug == slug
-                      ? " font-semibold border-b-[2px] border-primary-light"
+                      ? " font-semibold border-b-[3px] border-primary-light"
                       : ""
                   }`}
                 >
@@ -91,18 +90,25 @@ const ServiceDescription = ({ serviceRequested }) => {
             {serviceRequested.title}
           </h2>
           <ButtonCustom
-            action={STRUCTURE.button.action(slug)}
-            content={STRUCTURE.button.content}
             button_type={"button_secondary"}
-            customClasses="max-w-[14rem] uppercase"
-          />
+            width={"w-[300px]"}
+            height={"h-[3rem]"}
+          >
+            <Link href={STRUCTURE.button.action(slug)}>
+              <p className="w-full h-full flex items-center justify-center uppercase">
+                {STRUCTURE.button.content}
+              </p>
+            </Link>
+          </ButtonCustom>
         </div>
         <div className="mb-8">
-          <img
-            src={serviceRequested.logo}
-            alt={serviceRequested.title}
-            className="w-1/6"
-          />
+          {serviceRequested.type == "alliance" && (
+            <img
+              src={serviceRequested.logo}
+              alt={serviceRequested.title}
+              className="w-1/6 mb-8"
+            />
+          )}
           <p className="leading-8 text-black font-medium text-lg">
             {serviceRequested.description}
           </p>

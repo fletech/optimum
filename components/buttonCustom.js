@@ -1,35 +1,21 @@
-import Link from "next/link";
 import React from "react";
 import { FORM_CLASSES } from "../lib/utils";
-import Spinner from "./spinner";
 
-const ButtonCustom = ({
-  type,
-  content,
-  customClasses,
-  action,
-  loading,
-  button_type,
-}) => {
+const ButtonCustom = ({ type, button_type, children, width, height }) => {
   return (
     <button
       type={type}
-      className={`${FORM_CLASSES[button_type]} ${customClasses} `}
-      // border-4 border-secondary hover:border-secondary hover:bg-secondary hover:text-white
+      className={`font-semibold hover:font-bold text-lg text-white transition duration-300 ease hover:ease-out focus:border-white focus:border-2 outline-none rounded-md shadow-md shadow-gray-400 ${
+        FORM_CLASSES[button_type]
+      } 
+      ${
+        button_type == "button_primary"
+          ? " bg-primary-dark hover:bg-primary-medium focus:bg-primary-dark  "
+          : " bg-secondary hover:bg-secondary_button focus:bg-secondary_button "
+      }
+      ${width} ${height}`}
     >
-      {action && (
-        <Link className="w-full h-full mt-16" href={action}>
-          {content}
-        </Link>
-      )}
-      {loading ? (
-        <p className="flex items-center justify-center uppercase">
-          <Spinner />
-          Enviando
-        </p>
-      ) : !action ? (
-        <p>{content}</p>
-      ) : null}
+      {children}
     </button>
   );
 };

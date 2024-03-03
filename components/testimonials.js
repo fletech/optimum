@@ -24,7 +24,7 @@ const TESTIMONIALS = [
         "Depositamos en Silvina y Gestión Simple la confianza para ser el último contacto con nuestros clientes. Trato y profesionalidad destacables.",
       company: "Contable @ Beta Camiones",
       image: ["image"],
-      imageAvatar: "capella.jpeg",
+      imageAvatar: "Vic.png",
     },
   },
 

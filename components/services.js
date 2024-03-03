@@ -8,12 +8,7 @@ import { GlobalContext } from "../pages/_app";
 import ServiceCard from "./serviceCard";
 import { FORM_CLASSES } from "../lib/utils";
 import ButtonCustom from "./buttonCustom";
-
-const services = [
-  { attributes: { slug: "branding", title: "Branding", type: "service" } },
-  { attributes: { slug: "web", title: "Web", type: "service" } },
-  { attributes: { slug: "ecommerce", title: "Ecommerce", type: "service" } },
-];
+import Link from "next/link";
 
 const Services = () => {
   const { services } = useContext(GlobalContext);
@@ -43,13 +38,16 @@ const Services = () => {
       </SectionCards>
 
       <ButtonCustom
-        action={"#contacto"}
-        content={"CONSULTAR"}
         button_type={"button_secondary"}
-        customClasses={
-          " min-h-[3rem] md:min-w-[15rem] md:max-w-[18rem] w-[60%]"
-        }
-      />
+        width={"w-[300px] md:w-[400px]"}
+        height={"h-[3rem]"}
+      >
+        <Link href="/#contacto">
+          <p className="flex items-center justify-center uppercase w-full h-full">
+            Consultar ahora
+          </p>
+        </Link>
+      </ButtonCustom>
     </SectionDefault>
   );
 };
