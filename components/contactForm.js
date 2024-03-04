@@ -15,11 +15,17 @@ const ContactForm = ({ formData }) => {
       return alert("Por favor complete los campos obligatorios");
     } else {
       setLoading(true);
-      setTimeout(() => {
-        setLoading(false);
-        form.current.reset();
-      }, 1000);
+      // setTimeout(() => {
+      //   setLoading(false);
+      //   form.current.reset();
+      // }, 1000);
+      // send(e.target).then((res) => {
+      //   console.log(res);
+      //   setLoading(false);
+      //   form.current.reset();
+      // });
     }
+
     // return emailjs
     //   .sendForm(
     //     "service_zoho",
