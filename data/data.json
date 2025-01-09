@@ -3,9 +3,9 @@
     "global": {
       "id": 1,
       "attributes": {
-        "favicon": "https://res.cloudinary.com/dq7uyauun/image/upload/v1643533607/Portfolio/favicon_io/favicon-32x32.png",
-        "name": "Kubona Website Redesign",
-        "description": "Conversion of http://Kubona.ng from http://ASP.NET core MVC to Angular",
+        "favicon": "https://res.cloudinary.com/fletech/image/upload/v1657457719/favicon_f7cb9d0174.svg",
+        "name": "gestion-simple",
+        "description": "landing page",
         "createdAt": "2022-01-30T18:06:02.891Z",
         "updatedAt": "2022-01-30T18:40:27.273Z",
         "publishedAt": "2022-01-30T18:40:27.270Z",
@@ -16,7 +16,7 @@
     "homepage": {
       "id": 2,
       "attributes": {
-        "description": "Built form scrat the admin website to manage activities on ubona wesite.",
+        "description": "landing page",
         "createdAt": "2022-01-30T21:36:02.561Z",
         "updatedAt": "2022-01-30T21:36:04.129Z",
         "publishedAt": "2022-01-30T21:36:04.127Z",
