@@ -15,6 +15,10 @@ const ContactForm = ({ formData }) => {
       return alert("Por favor complete los campos obligatorios");
     } else {
       setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+        form.current.reset();
+      }, 2000);
       // setTimeout(() => {
       //   setLoading(false);
       //   form.current.reset();

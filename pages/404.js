@@ -15,7 +15,7 @@ const Error = ({ slug, homepage }) => {
         <div className="flex items-center justify-center w-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-20 w-20 md:h-34 md:w-34 text-red-500"
+            className="h-16 w-16 md:h-34 md:w-34 text-red-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -25,19 +25,18 @@ const Error = ({ slug, homepage }) => {
               clipRule="evenodd"
             />
           </svg>
-          <h2 className=" text-4xl md:text-6xl text-red-500">Ups...</h2>
+          <h2 className=" text-xl md:text-3xl text-black">
+            No hemos podido encontrar esta página.
+          </h2>
         </div>
         <div className="flex flex-col items-center justify-center w-full">
-          <p className="text-2xl text-red-500 mb-10 ">
-            No hemos podido encontrar esta página.
-          </p>
-          <p className="text-sm text-black mb-4">
+          <p className="text-md text- mb-4">
             {"(Pero para nosotros todo tiene solución...)"}
           </p>
 
-          <h2 className="text-2xl text-black mb-4">
+          <p className="text-xl text-black mb-4 font-semibold">
             A dónde querés que te redirijamos?
-          </h2>
+          </p>
 
           <nav className="w-full h-full flex justify-center items-center">
             <ul className="h-full flex justify-center items-center">

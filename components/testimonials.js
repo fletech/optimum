@@ -8,7 +8,7 @@ const TESTIMONIALS = [
   {
     id: 1,
     attributes: {
-      name: "Agustin Lambiase Rojas",
+      name: "Agustin Lambiase",
       testimonial:
         "En Gestion Simple nos entendieron desde el momento uno los requerimientos y tuvimos la flota en funcionamiento en menos de 48 horas. La atención y el servicio es excelente. Recomendamos a Gestion Simple sin lugar a dudas. ",
       company: "Gerente @ El Escuadrón Servicios",
@@ -19,7 +19,7 @@ const TESTIMONIALS = [
   {
     id: 2,
     attributes: {
-      name: "Graciela Capella",
+      name: "Graciela Chocobar",
       testimonial:
         "Depositamos en Silvina y Gestión Simple la confianza para ser el último contacto con nuestros clientes. Trato y profesionalidad destacables.",
       company: "Contable @ Beta Camiones",
@@ -31,10 +31,10 @@ const TESTIMONIALS = [
   {
     id: 3,
     attributes: {
-      name: "Agustín Caceres ",
+      name: "Agustín Cáceres",
       testimonial:
-        "Gestión Simple nos dio la tranquilidad de saber que lo que nosotros creíamos un problema, en realidad era factible de hacerse gracias a la gran profesionalidad de Silvina. Excelente servicio y atención. ",
-      company: "Director @ Ciudadanías y Gestiones",
+        "Gestión Simple revirtió una situación que creíamos problemática en una solución simple y efectiva, gracias al profesionalismo de Silvina. Su atención y servicio fueron excelentes.",
+      company: "Director @ Tramit.ar",
       image: ["image"],
       imageAvatar: "caceres.jpeg",
     },

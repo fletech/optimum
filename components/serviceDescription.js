@@ -50,7 +50,7 @@ const ServiceDescription = ({ serviceRequested }) => {
   return (
     <SectionDefault
       display="flex flex-col justify-start items-center"
-      classes="w-[100%] min-h-screen mt-[10vh] pb-[10vh] px-[10%]"
+      classes="w-[100%] min-h-screen mt-[10vh] pb-[10vh] px-[10%] transition-all duration-300 ease-in-out"
       padding={"pt-[2vh]"}
     >
       <div className="w-full min-h-[10vh] flex flex-col justify-between border-b-[1px] border-gray-300 mb-8">
@@ -65,26 +65,28 @@ const ServiceDescription = ({ serviceRequested }) => {
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center justify-start mb-[1rem]">
+        <div className="w-full flex items-center justify-start  overflow-x-auto scrollbar-hide py-4">
           {navItems.map((element, i) => {
             return (
               <Link href={`/servicios/${element.slug}`} key={i}>
-                <p
-                  className={`mr-6 text-gray-400 cursor-pointer ${
-                    element.slug == slug
-                      ? " font-semibold border-b-[3px] border-primary-light"
-                      : ""
-                  }`}
-                >
-                  {element.title}
-                </p>
+                <div className="w-auto">
+                  <p
+                    className={`w-max mr-6 text-gray-400 cursor-pointer transition-all  ${
+                      element.slug == slug
+                        ? " font-semibold border-b-[3px] border-primary-light"
+                        : "border-b-[3px] border-transparent"
+                    }`}
+                  >
+                    {element.title}
+                  </p>
+                </div>
               </Link>
             );
           })}
         </div>
       </div>
 
-      <div className="w-full h-full">
+      <div className="w-full h-full ">
         <div className="flex flex-col justify-center md:flex-row md:items-center md:justify-between w-full h-auto mb-6">
           <h2 className="text-2xl text-primary-dark uppercase mb-4 md:mb-0">
             {serviceRequested.title}
@@ -101,12 +103,12 @@ const ServiceDescription = ({ serviceRequested }) => {
             </Link>
           </ButtonCustom>
         </div>
-        <div className="mb-8">
+        <div className="mb-8 ">
           {serviceRequested.type == "alliance" && (
             <img
               src={serviceRequested.logo}
               alt={serviceRequested.title}
-              className="w-1/6 mb-8"
+              className="w-auto mb-8 max-h-[50px]"
             />
           )}
           <p className="leading-8 text-black font-medium text-lg">
@@ -115,26 +117,31 @@ const ServiceDescription = ({ serviceRequested }) => {
         </div>
 
         <div className="flex flex-col md:flex-row items-start justify-start">
-          <div className="w-full md:w-1/2">
+          <div className="w-full ">
             <p className="text-primary-medium font-semibold text-xl">
               {serviceRequested.services_title}
             </p>
             <ul>
               {serviceRequested.services_offered.map((item, i) => (
-                <div key={i} className="flex items-center justify-start">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-primary-light"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <li className={"text-black font-light my-[0.5rem]"}>
+                <div
+                  key={i}
+                  className="relative flex items-center justify-start"
+                >
+                  <div className="absolute -left-1 top-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 text-primary-light"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <li className={"text-black font-light my-[0.5rem] ml-4"}>
                     {item}
                   </li>
                 </div>
